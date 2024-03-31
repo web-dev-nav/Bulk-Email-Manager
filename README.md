@@ -4,6 +4,7 @@
 
 CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
 More information can be found at the [official site](https://codeigniter.com).
+![2](https://github.com/web-dev-nav/Bulk-Email-Manager/assets/110724391/1df59bff-155a-4576-8709-afff22c40d80)
 
 This repository holds a composer-installable app starter.
 It has been built from the
