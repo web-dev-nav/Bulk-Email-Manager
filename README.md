@@ -35,4 +35,4 @@ Built with CodeIgniter use MailJet Markting API to send builk email at once.
  # Extra Infromation
 
 By default it using Mailjet free API to send emails. How many email you can send at once can be find here: https://www.mailjet.com/pricing/ or https://dev.mailjet.com/email/reference/overview/rate-limits/
-Please note: The system still require futher developement if you are a developer you can find API documentation here: https://dev.mailjet.com/email/guides/send-api-v31/
+Please note: The system still require futher developement if you are a developer you can find API documentation here: https://dev.mailjet.com/email/guides/send-api-v31/ OR https://dev.mailjet.com/email/reference/
