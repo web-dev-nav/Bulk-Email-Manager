@@ -31,4 +31,8 @@ Built with CodeIgniter use MailJet Markting API to send builk email at once.
     MAILJET_SEND_MAIL = info@itmonkinc.com //VERIFIED DOMAIN
     MAILJET_COMPANY_NAME = Itmonk // YOUR FIRM NAME
 ```    
- 
+
+ # Extra Infromation
+
+By default it using Mailjet free API to send emails. How many email you can send at once can be find here: https://www.mailjet.com/pricing/
+Please note: The system still require futher developement if you are a developer you can find API documentation here: https://dev.mailjet.com/email/guides/send-api-v31/
