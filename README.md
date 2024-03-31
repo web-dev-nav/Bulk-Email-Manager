@@ -22,7 +22,7 @@ Built with CodeIgniter use MailJet Markting API to send builk email at once.
 
 # Signup for Mailjet Account
  1. Click here to signup for Mailjet: https://app.mailjet.com/signin
- 2. Once account created, verify domain from which you would like to send emails. This is the sender domain that will be shown at the receipent inbox.
+ 2. Once account created, verify domain from which you would like to send emails. This is the sender domain that will be shown at the recipent inbox.
  3. Create API key and add verified domain.
     
 ```php
