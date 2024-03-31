@@ -26,7 +26,7 @@ Built with CodeIgniter use MailJet Markting API to send builk email at once.
     
     ![image](https://github.com/web-dev-nav/Bulk-Email-Manager/assets/110724391/78fdf381-058e-4ac5-b86d-e0727f3ff3e0)
 
- 4. Create API key and add verified domain.
+ 4. Create API key and add verified domain on .env
     
 ```php
     MAILJET_API_KEY = f054e3c11db371956bdacd_KEY
