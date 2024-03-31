@@ -1,62 +1,38 @@
-# CodeIgniter 4 Application Starter
+# Email Bulk Manager 
 
-## What is CodeIgniter?
+## What is it?
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+Built with CodeIgniter use MailJet Markting API to send builk email at once.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+![2](https://github.com/web-dev-nav/Bulk-Email-Manager/assets/110724391/1df59bff-155a-4576-8709-afff22c40d80)
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+# Config
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+## Setup database
 
-## Installation & updates
+1. Create Phpmyadmin database and Import the SQL/ sql file.
+2. Change config inside .env (Hidden) or rename to add (dot) before env: .env
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+```php
+ database.default.hostname = localhost
+ database.default.database = u957918675_bulk_mailer
+ database.default.username = u957918675_bulk_mailer
+ database.default.password = |PjgwW|w4hI
+```
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+# Signup for Mailjet Account
+ 1. Click here to signup for Mailjet: https://app.mailjet.com/signin
+ 2. Once account created, verify domain from which you would like to send emails. This is the sender domain that will be shown at the recipent inbox.
+ 3. Create API key and add verified domain.
+    
+```php
+    MAILJET_API_KEY = f054e3c11db371956bdacd_KEY
+    MAILJET_API_SECRET = e48f6971d67a5dc117224ec_SECRET
+    MAILJET_SEND_MAIL = info@itmonkinc.com //VERIFIED DOMAIN
+    MAILJET_COMPANY_NAME = Itmonk // YOUR FIRM NAME
+```    
 
-## Setup
+ # Extra Infromation
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+By default it using Mailjet free API to send emails. How many email you can send at once can be find here: https://www.mailjet.com/pricing/ or https://dev.mailjet.com/email/reference/overview/rate-limits/
+Please note: The system still require futher developement if you are a developer you can find API documentation here: https://dev.mailjet.com/email/guides/send-api-v31/ OR https://dev.mailjet.com/email/reference/
